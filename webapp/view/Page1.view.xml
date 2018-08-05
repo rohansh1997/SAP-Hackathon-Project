@@ -1,0 +1,56 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledProject.controller.Page1" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <Image src="/webapp/resources/2.jpg" height="700px" width="1280px" densityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="0px" top="714px">
+                        <layout:control>
+                            <form:Form width="100%" editable="true" visible="true">
+                                <form:title>
+                                    <core:Title text="Log In" level="Auto"/>
+                                </form:title>
+                                <form:formContainers>
+                                    <form:FormContainer visible="true">
+                                        <form:formElements>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="User ID" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <Input type="Text" showValueHelp="false" enabled="true" visible="true" width="50%" valueHelpOnly="false" maxLength="0"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="Password" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <Input type="Password" showValueHelp="false" enabled="true" visible="true" width="50%" valueHelpOnly="false" maxLength="0"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                        </form:formElements>
+                                        <form:title/>
+                                    </form:FormContainer>
+                                </form:formContainers>
+                                <form:layout>
+                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                </form:layout>
+                            </form:Form>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer/>
+        <headerContent>
+            <Text text="Hogwarts" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit"/>
+        </headerContent>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
